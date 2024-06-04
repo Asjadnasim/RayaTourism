@@ -1,10 +1,21 @@
 import type { Metadata } from 'next';
 import { Recursive } from 'next/font/google';
 import './globals.css';
+import localFont from '@next/font/local';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const recursive = Recursive({ subsets: ['latin'] });
+
+const meaculpa = localFont({
+	src: [
+		{
+			path: '../public/fonts/MeaCulpa-Regular.ttf',
+			weight: '400',
+		},
+	],
+	variable: '--font-meaculpa',
+});
 
 export const metadata: Metadata = {
 	title: 'Raya Tourism',
@@ -17,7 +28,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='en' className={`${meaculpa.variable} font-sans`}>
 			<body className={recursive.className}>
 				<Header />
 				<main>{children}</main>

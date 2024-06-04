@@ -8,7 +8,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
-		<nav className='sticky h-28 inset-x-0 bg-blue-500 top-0 w-full border-b border-gray-200  backdrop-blur-lg transition-all'>
+		<nav className='h-28 inset-x-0 bg-cyan-700 top-0 w-full border-b border-gray-200  backdrop-blur-lg transition-all'>
 			<MaxWidthWrapper>
 				<nav className='flex  justify-between items-center  '>
 					<div className='bg-white h-20 w-20 flex justify-between items-center  mt-4'>
@@ -26,7 +26,8 @@ const Navbar = () => {
 					{/* TEXT */}
 					<ul className='flex justify-between items-center gap-2 '>
 						{headerLink.map((item) => {
-							const isActive = pathname.startsWith(item.link);
+							const isActive =
+								pathname === item.link || (pathname === '/' && item.id === '1');
 
 							return (
 								<div
@@ -41,8 +42,8 @@ const Navbar = () => {
 										}`}
 									/>
 									<li
-										className={`font-semibold text-lg uppercase text-white p-1 group-hover:text-teal-300 transition-colors duration-300 ${
-											isActive ? 'text-teal-300' : ''
+										className={`font-semibold text-lg uppercase  p-1 group-hover:text-teal-300 transition-colors duration-300 ${
+											isActive ? 'text-teal-300' : 'text-white'
 										}`}
 									>
 										<a href={item.link}>{item.title}</a>
