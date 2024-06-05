@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import { BentoGrid, BentoGridItem } from '../ui/bento-grid';
+import { grid } from '../constants';
 
 const DestinationSection5 = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +17,7 @@ const DestinationSection5 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[720px] mt-8 w-full'>
+		<div className=' h-[1820px] mt-8 w-full'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
 				Top <span className='text-white'>.</span> Destinations
 			</h2>
@@ -32,27 +34,20 @@ const DestinationSection5 = () => {
 				/>
 			</div>
 			<MaxWidthWrapper>
-				<div className='grid grid-cols-4 gap-5  p-5'>
-					{/* {flight.map((item) => (
-						<div className='p-5 relative group' key={item.id}>
-							<img
-								src={item.src}
-								alt='Dubai'
-								className='w-72 h-48 object-fill rounded-xl transition duration-300 ease-in-out group-hover:opacity-40'
-							/>
-							<h2 className='text-center text-xl mt-4 font-normal'>
-								{item.title}
-							</h2>
-
-							<div className='details-button flex justify-center items-center absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out'>
-								<Button variant={'outline'} className=' font-semibold text-xl '>
-									<Flight className='text-cyan-600 fill-current pr-4 w-12 h-12' />
-									Contact
-								</Button>
-							</div>
-						</div>
-					))} */}
-				</div>
+				<BentoGrid className='mx-auto md:auto-rows-[20rem] mt-2'>
+					{grid.map((item) => (
+						<BentoGridItem
+							className={item.className}
+							id={item.id}
+							title={item.title}
+							description=''
+							header=''
+							key={item.id}
+							imgClassName={item.imgClassName}
+							img={item.src}
+						/>
+					))}
+				</BentoGrid>
 			</MaxWidthWrapper>
 		</div>
 	);

@@ -202,3 +202,69 @@ export const flight = [
 		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709215912/1240721296_bm5twv.jpg',
 	},
 ];
+
+export const grid = [
+	{
+		id: 1,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-1.jpg',
+		title: 'Museum of the Future',
+		className: 'md:col-span-2',
+		imgClassName: 'w-full h-auto object-cover rounded-lg',
+	},
+	{
+		id: 2,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-2.jpg',
+		className: 'md:col-span-1',
+		imgClassName: 'w-full h-auto object-cover rounded-lg',
+		title: 'Burj Khalifa',
+	},
+	{
+		id: 3,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-3.jpg',
+		className: 'md:col-span-1',
+		imgClassName: 'w-auto h-auto object-cover rounded-lg',
+		title: 'Burj Al Arab',
+	},
+	{
+		id: 4,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-11.jpg',
+		className: 'md:col-span-2',
+		imgClassName: 'w-[740px] h-auto object-cover rounded-lg',
+		title: 'Desert Safari',
+	},
+	{
+		id: 5,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-4.jpg',
+		className: ' md:col-span-3',
+		imgClassName: 'w-[1380px] h-auto object-fill rounded-lg',
+		title: 'Palm Jumeriah',
+	},
+	{
+		id: 6,
+		src: 'https://www.rayatourism.ae/images/resource/image-66.jpg',
+		className: 'md:col-span-2',
+		imgClassName: 'w-[740px] h-auto object-cover rounded-lg',
+		title: 'Atlantis',
+	},
+	{
+		id: 7,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-77.jpg',
+		className: 'md:col-span-1',
+		imgClassName: 'w-auto h-auto object-cover rounded-lg',
+		title: 'Aquaventure',
+	},
+	{
+		id: 8,
+		src: 'https://res.cloudinary.com/dcpte972l/image/upload/v1709209554/abudhabi_1_ke83j6.jpg',
+		className: 'md:col-span-1',
+		title: 'Etihad Tower',
+		imgClassName: 'w-auto h-auto object-cover rounded-lg',
+	},
+	{
+		id: 9,
+		src: 'https://www.rayatourism.ae/images/resource/gallery-62.png',
+		className: 'md:col-span-2',
+		imgClassName: 'w-[740px] h-auto object-cover rounded-lg',
+		title: 'Dubai Frame',
+	},
+];
