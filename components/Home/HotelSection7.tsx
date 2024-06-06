@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { visa } from '../constants';
-import { Button } from '../ui/button';
-import { BookUser } from 'lucide-react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import { hotel } from '../constants';
+import { Button } from '../ui/button';
+import { Hotel } from '../svgs';
 
-const VisaSection2 = () => {
+const HotelSection7 = () => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	useEffect(() => {
@@ -18,9 +18,9 @@ const VisaSection2 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[1880px] mt-20 w-full'>
+		<div className=' h-[780px] -mt-20 w-full'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
-				Visa <span className='text-white'>.</span> Packages
+				Hotel <span className='text-white'>.</span> Packages
 			</h2>
 			<div className='flex items-center justify-center flex-col'>
 				<h4 className='text-center mt-4 text-xl font-semibold '>
@@ -36,29 +36,24 @@ const VisaSection2 = () => {
 			</div>
 			<MaxWidthWrapper>
 				<div className='grid grid-cols-4 gap-5  p-5'>
-					{visa.map((item) => (
+					{hotel.map((item) => (
 						<div className='p-5 relative group' key={item.id}>
 							<img
 								src={item.src}
 								alt='Dubai'
 								className='w-72 h-48 object-fill rounded-xl transition duration-300 ease-in-out group-hover:opacity-40'
 							/>
-							<h2 className='text-start text-2xl mt-4 font-normal pl-2'>
+							<h2 className='text-center text-2xl mt-4 font-normal pl-2'>
 								{item.title}
 							</h2>
-							<h2 className='text-start text-xl font-normal pl-2'>
-								{item.title2}
-							</h2>
-							<h3 className='text-start text-xl mt-2 font-semibold uppercase text-cyan-600 pl-2'>
-								{item.start}
-							</h3>
-							<div className='flex justify-center items-center absolute top-1/3 left-0 transform -translate-y-1/2 -translate-x-full group-hover:left-10 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 transition-all duration-300 ease-in-out cursor-pointer'>
+
+							<div className='flex justify-center items-center absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full group-hover:left-10 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 transition-all duration-300 ease-in-out cursor-pointer'>
 								<Button
 									variant={'outline'}
-									className='bg-cyan-300 font-semibold text-xl '
+									className='font-semibold text-xl bg-cyan-300 text-gray-900'
 								>
-									<BookUser className=' pr-4 w-12 h-12' />
-									Details
+									<Hotel className=' pr-4 w-12 h-12' />
+									Book now
 								</Button>
 							</div>
 						</div>
@@ -69,4 +64,4 @@ const VisaSection2 = () => {
 	);
 };
 
-export default VisaSection2;
+export default HotelSection7;

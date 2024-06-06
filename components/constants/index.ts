@@ -268,3 +268,41 @@ export const grid = [
 		title: 'Dubai Frame',
 	},
 ];
+
+export const hotel = [
+	{
+		id: 1,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216033/Dubai_ui8swp.jpg',
+		title: 'Hotels at Dubai',
+	},
+	{
+		id: 2,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216032/Ajman_fet720.jpg',
+		title: 'Hotels at Abu Dhabi',
+	},
+	{
+		id: 3,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216033/Fujairah_atodzx.jpg',
+		title: 'Hotels at Ajman',
+	},
+	{
+		id: 4,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216033/umm_al_-quwain_i2g4vt.jpg',
+		title: 'Hotels at Sharjah',
+	},
+	{
+		id: 5,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216030/Abu_dubai_ycaqef.jpg',
+		title: 'Hotels at Fujairah',
+	},
+	{
+		id: 6,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216033/Ras_al_khaimah_ivzdvd.jpg',
+		title: 'Ras al-Khaimah',
+	},
+	{
+		id: 7,
+		src: 'https://res.cloudinary.com/dlvw0rclu/image/upload/v1709216573/hotel_room_with_beachfront_view_tl5ccs.jpg',
+		title: 'Hotels at Umm al-Quwain',
+	},
+];

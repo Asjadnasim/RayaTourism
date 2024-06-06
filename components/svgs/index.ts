@@ -5,3 +5,6 @@ export { default as Calendar } from './calendar.svg';
 export { default as Team } from './team.svg';
 export { default as Travel } from './travel.svg';
 export { default as Flight } from './flight.svg';
+export { default as Correct } from './correct.svg';
+export { default as Play } from './play.svg';
+export { default as Hotel } from './hotel.svg';

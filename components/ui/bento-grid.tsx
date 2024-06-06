@@ -57,7 +57,7 @@ export const BentoGridItem = ({
 			<div className='flex justify-center items-center absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full group-hover:left-1/2 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 transition-all duration-300 ease-in-out pointer-events-none'>
 				<Button
 					variant={'outline'}
-					className='font-semibold text-xl bg-cyan-300 text-gray-700'
+					className='font-semibold text-xl bg-cyan-300 text-gray-900'
 				>
 					{title}
 				</Button>

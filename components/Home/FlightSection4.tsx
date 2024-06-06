@@ -47,7 +47,7 @@ const FlightSection4 = () => {
 								{item.title}
 							</h2>
 
-							<div className='details-button flex justify-center items-center absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out'>
+							<div className='flex justify-center items-center absolute top-1/4 left-0 transform -translate-y-1/2 -translate-x-full group-hover:left-10 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 transition-all duration-300 ease-in-out cursor-pointer'>
 								<Button variant={'outline'} className=' font-semibold text-xl '>
 									<Flight className='text-cyan-600 fill-current pr-4 w-12 h-12' />
 									Contact
