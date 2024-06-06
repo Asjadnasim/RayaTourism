@@ -306,3 +306,24 @@ export const hotel = [
 		title: 'Hotels at Umm al-Quwain',
 	},
 ];
+
+export const reviewCard = [
+	{
+		id: 1,
+		title: 'Aleksander',
+		desc: 'My family and I recently traveled with Raya Tourism, and it was absolute delight. From securing our international flights to arranging amazing excursions in France, every detail was impeccable. The VIP treatment made our Visa truly special.',
+		title2: 'Russia',
+	},
+	{
+		id: 2,
+		title: 'Asjad Nasim',
+		desc: 'Our family had the most incredible journey with Raya Tourism. From booking flights with them to enjoying the beautiful excursions in Phantasia City, every moment was magical. The VIP treatment made us feel like royalty. A heartfelt thank you to the Raya team',
+		title2: 'India',
+	},
+	{
+		id: 3,
+		title: 'Mohammed Hussain',
+		desc: "I can't speak highly enough of Raya Tourism. From their worldwide cruise options to local excursions in Italy, they provided a world-class experience. The team's dedication to customer satisfaction truly sets them apart. A big thumbs up! Thank You",
+		title2: 'Morocco',
+	},
+];

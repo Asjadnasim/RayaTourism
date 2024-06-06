@@ -8,3 +8,4 @@ export { default as Flight } from './flight.svg';
 export { default as Correct } from './correct.svg';
 export { default as Play } from './play.svg';
 export { default as Hotel } from './hotel.svg';
+export { default as Star } from './5star.svg';

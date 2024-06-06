@@ -8,7 +8,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
-		<nav className='h-28 inset-x-0 bg-cyan-700 top-0 w-full border-b border-gray-200  backdrop-blur-lg transition-all'>
+		<nav className='h-28 inset-x-0 bg-cyan-500 top-0 w-full border-b border-gray-200  backdrop-blur-lg transition-all'>
 			<MaxWidthWrapper>
 				<nav className='flex  justify-between items-center  '>
 					<div className='bg-white h-20 w-20 flex justify-between items-center  mt-4'>

@@ -43,7 +43,7 @@ const HotelSection7 = () => {
 								alt='Dubai'
 								className='w-72 h-48 object-fill rounded-xl transition duration-300 ease-in-out group-hover:opacity-40'
 							/>
-							<h2 className='text-center text-2xl mt-4 font-normal pl-2'>
+							<h2 className='text-center text-2xl mt-4 font-normal pl-2 capitalize'>
 								{item.title}
 							</h2>
 
