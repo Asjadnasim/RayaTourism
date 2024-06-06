@@ -8,6 +8,7 @@ import Section3 from '@/components/Home/Section3';
 import VisaSection2 from '@/components/Home/VisaSection2';
 import ReviewSection9 from '@/components/Home/ReviewSection9';
 import CarouselSection8 from '@/components/Home/CarouselSection8';
+import MapSection10 from '@/components/Home/MapSection10';
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 			<HotelSection7 />
 			<CarouselSection8 />
 			<ReviewSection9 />
+			<MapSection10 />
 		</div>
 	);
 }
