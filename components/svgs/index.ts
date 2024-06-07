@@ -9,3 +9,8 @@ export { default as Correct } from './correct.svg';
 export { default as Play } from './play.svg';
 export { default as Hotel } from './hotel.svg';
 export { default as Star } from './5star.svg';
+export { default as Instagram } from './instagram.svg';
+export { default as Facebook } from './facebook.svg';
+export { default as Linkedin } from './linkedin.svg';
+export { default as Twitter } from './twitter.svg';
+export { default as Phone } from './phone.svg';
