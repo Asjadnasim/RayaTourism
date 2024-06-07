@@ -17,7 +17,7 @@ const Navbar = () => {
 
 	useMotionValueEvent(scrollYProgress, 'change', (current) => {
 		if (typeof current === 'number') {
-			let direction = current - scrollYProgress.getPrevious();
+			let direction = current - (scrollYProgress.getPrevious()! as number);
 
 			if (scrollYProgress.get() < 0.05) {
 				setVisible(true); // Keep visible at the top
