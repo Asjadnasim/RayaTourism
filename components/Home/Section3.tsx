@@ -7,6 +7,12 @@ import { Calendar, Earth, Location, MoneyBag, Team, Travel } from '../svgs';
 
 const Section3 = () => {
 	const [isVisible, setIsVisible] = useState(false);
+	const [isEarthHovered, setIsEarthHovered] = useState(false);
+	const [isMoneyHovered, setIsMoneyHovered] = useState(false);
+	const [isTravellHovered, setIsTravellHovered] = useState(false);
+	const [isLocationHovered, setIsLocationHovered] = useState(false);
+	const [isCalendarHovered, setIsCalendarHovered] = useState(false);
+	const [isTeamHovered, setIsTeamHovered] = useState(false);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -38,8 +44,16 @@ const Section3 = () => {
 				<div className='flex justify-between items-center'>
 					{/* left  */}
 					<div className='h-auto w-auto flex flex-col items-center justify-center mt-8'>
-						<div className=' w-auto h-auto mt-4'>
-							<Earth className='w-14 h-14 text-cyan-600 fill-current' />
+						<div
+							className=' w-auto h-auto mt-4'
+							onMouseEnter={() => setIsEarthHovered(true)}
+							onMouseLeave={() => setIsEarthHovered(false)}
+						>
+							<Earth
+								className={`w-14 h-14 text-cyan-600 fill-current  transform transition-transform duration-500 ${
+									isEarthHovered ? 'rotate-[360deg]' : ''
+								}`}
+							/>
 							<h3 className='font-bold text-xl mt-4  text-cyan-900'>
 								Diverse Destinations
 							</h3>
@@ -47,8 +61,16 @@ const Section3 = () => {
 								Richly varied landscapes, luxury accommodation Travel.
 							</p>
 						</div>
-						<div className=' w-auto h-auto mt-4'>
-							<MoneyBag className='w-14 h-14 text-cyan-600 fill-current' />
+						<div
+							className=' w-auto h-auto mt-4'
+							onMouseEnter={() => setIsMoneyHovered(true)}
+							onMouseLeave={() => setIsMoneyHovered(false)}
+						>
+							<MoneyBag
+								className={`w-14 h-14 text-cyan-600 fill-current  transform transition-transform duration-500 ${
+									isMoneyHovered ? 'rotate-[360deg]' : ''
+								}`}
+							/>
 							<h3 className='font-bold text-xl mt-4  text-cyan-900'>
 								Value For Money
 							</h3>
@@ -56,8 +78,16 @@ const Section3 = () => {
 								Richly varied landscapes, luxury accommodation Travel.
 							</p>
 						</div>
-						<div className=' w-auto h-auto mt-4'>
-							<Location className='w-14 h-14 text-cyan-600 fill-current' />
+						<div
+							className=' w-auto h-auto mt-4'
+							onMouseEnter={() => setIsLocationHovered(true)}
+							onMouseLeave={() => setIsLocationHovered(false)}
+						>
+							<Location
+								className={`w-14 h-14 text-cyan-600 fill-current  transform transition-transform duration-500 ${
+									isLocationHovered ? 'rotate-[360deg]' : ''
+								}`}
+							/>
 							<h3 className='font-bold text-xl mt-4  text-cyan-900'>
 								Beatiful Places
 							</h3>
@@ -77,8 +107,16 @@ const Section3 = () => {
 					</div>
 					{/* right */}
 					<div className='h-auto w-auto flex flex-col items-center justify-center mt-8'>
-						<div className=' w-auto h-auto mt-4'>
-							<Calendar className='w-14 h-14 text-cyan-600 fill-current' />
+						<div
+							className=' w-auto h-auto mt-4'
+							onMouseEnter={() => setIsCalendarHovered(true)}
+							onMouseLeave={() => setIsCalendarHovered(false)}
+						>
+							<Calendar
+								className={`w-14 h-14 text-cyan-600 fill-current  transform transition-transform duration-500 ${
+									isCalendarHovered ? 'rotate-[360deg]' : ''
+								}`}
+							/>
 							<h3 className='font-bold text-xl mt-4  text-cyan-900'>
 								Fast Booking
 							</h3>
@@ -86,8 +124,16 @@ const Section3 = () => {
 								Richly varied landscapes, luxury accommodation Travel.
 							</p>
 						</div>
-						<div className=' w-auto h-auto mt-4'>
-							<Team className='w-14 h-14 text-cyan-600 fill-current' />
+						<div
+							className=' w-auto h-auto mt-4'
+							onMouseEnter={() => setIsTeamHovered(true)}
+							onMouseLeave={() => setIsTeamHovered(false)}
+						>
+							<Team
+								className={`w-14 h-14 text-cyan-600 fill-current  transform transition-transform duration-500 ${
+									isTeamHovered ? 'rotate-[360deg]' : ''
+								}`}
+							/>
 							<h3 className='font-bold text-xl mt-4  text-cyan-900'>
 								Support Team
 							</h3>
@@ -95,8 +141,16 @@ const Section3 = () => {
 								Richly varied landscapes, luxury accommodation Travel.
 							</p>
 						</div>
-						<div className=' w-auto h-auto mt-4'>
-							<Travel className='w-14 h-14 text-cyan-600 fill-current' />
+						<div
+							className=' w-auto h-auto mt-4'
+							onMouseEnter={() => setIsTravellHovered(true)}
+							onMouseLeave={() => setIsTravellHovered(false)}
+						>
+							<Travel
+								className={`w-14 h-14 text-cyan-600 fill-current  transform transition-transform duration-500 ${
+									isTravellHovered ? 'rotate-[360deg]' : ''
+								}`}
+							/>
 							<h3 className='font-bold text-xl mt-4  text-cyan-900'>
 								Passionate Travel
 							</h3>

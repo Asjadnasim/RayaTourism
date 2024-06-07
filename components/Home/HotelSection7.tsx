@@ -50,7 +50,7 @@ const HotelSection7 = () => {
 							<div className='flex justify-center items-center absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full group-hover:left-10 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 transition-all duration-300 ease-in-out cursor-pointer'>
 								<Button
 									variant={'outline'}
-									className='font-semibold text-xl bg-cyan-300 text-gray-900'
+									className='font-semibold text-xl  text-gray-900'
 								>
 									<Hotel className=' pr-4 w-12 h-12' />
 									Book now

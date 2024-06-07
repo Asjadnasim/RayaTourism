@@ -71,7 +71,7 @@ const CarouselSection8 = () => {
 						}}
 						autoplay={{
 							delay: 2500,
-							disableOnInteraction: true,
+							disableOnInteraction: false,
 						}}
 						pagination={{
 							dynamicBullets: true,
