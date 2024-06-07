@@ -18,7 +18,7 @@ const FlightSection4 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[720px] mt-20 w-full'>
+		<div className=' h-[720px] mt-20 w-full' id='flights'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
 				Flight <span className='text-white'>.</span> Packages
 			</h2>

@@ -18,7 +18,7 @@ const HotelSection7 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[780px] -mt-20 w-full'>
+		<div className=' h-[780px] -mt-20 w-full' id='hotels'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
 				Hotel <span className='text-white'>.</span> Packages
 			</h2>

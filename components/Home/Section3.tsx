@@ -23,7 +23,7 @@ const Section3 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[780px] -mt-16 w-full'>
+		<div className=' h-[780px] -mt-16 w-full' id='travel-insurance'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
 				We<span className='text-white'>.</span> are
 				<span className='text-white'>.</span> Awesome

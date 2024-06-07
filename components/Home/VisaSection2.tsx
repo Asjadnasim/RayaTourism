@@ -18,7 +18,7 @@ const VisaSection2 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[1880px] mt-20 w-full'>
+		<div className=' h-[1880px] mt-20 w-full' id='visa'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
 				Visa <span className='text-white'>.</span> Packages
 			</h2>

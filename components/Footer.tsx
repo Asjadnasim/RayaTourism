@@ -5,7 +5,10 @@ import MaxWidthWrapper from './MaxWidthWrapper';
 
 const Footer = () => {
 	return (
-		<div className='bg-cyan-400 w-full h-auto mt-12 relative bg-no-repeat bg-cover'>
+		<div
+			className='bg-cyan-400 w-full h-auto mt-12 relative bg-no-repeat bg-cover'
+			id='contact'
+		>
 			<div className='flex justify-evenly items-center'>
 				{/* icon */}
 				<div className='mt-8 flex flex-col items-center justify-center'>

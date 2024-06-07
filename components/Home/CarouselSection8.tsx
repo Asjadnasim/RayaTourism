@@ -37,7 +37,7 @@ const CarouselSection8 = () => {
 	}, []);
 
 	return (
-		<div className=' h-[720px] mt-8 w-full'>
+		<div className=' h-[720px] mt-8 w-full' id='uae-visa-change'>
 			<h2 className='text-center text-4xl  text-cyan-700 font-cursive font-extralight'>
 				Most <span className='text-white'>.</span> Popular Packages
 			</h2>
